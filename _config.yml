@@ -1,5 +1,0 @@
-deploy:
-  type: git
-  repository: git@github.com:Xaeja/xaeja.github.io.git
-  branch: main
-
