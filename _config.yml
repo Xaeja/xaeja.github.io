@@ -3,7 +3,3 @@ deploy:
   repository: git@github.com:Xaeja/xaeja.github.io.git
   branch: main
 
-name:"个人作品"
-description:"xaeja的个人作品合辑"
-avatar:""
-favicon:"/fanicon.ico"
