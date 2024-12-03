@@ -1,0 +1,31 @@
+body{background-image:url(/Public/Img/animate-bg.svg)}
+.Main{display:grid;grid-template-columns:1fr 20rem;gap:1rem;max-width:80rem;margin:0 auto}
+article{grid-area:1/1/2/2;background:#fff;overflow:hidden;border-radius:1rem;margin-top:2rem;height:calc(100vh - 6rem);padding:1rem}
+article ul{height:2rem;border:3px solid #428cbc;border-radius:2rem;padding:0;margin:0 0 1rem 0;overflow:hidden;display:inline-flex;position:relative}
+article ul li{display:inline-block;line-height:2rem}
+article ul li a{color:#232a34;background-color:transparent;text-align:center;line-height:100%;width:100%;padding:1rem;border:none;border-radius:0;position:relative;z-index:1}
+article ul li a.action,article ul li a:hover,article ul li.active a,article ul li.active a:hover{background:0 0;border:none}
+article ul li a:after,article ul li a:before{content:'';height:100%;width:100%;border-top:none;border-bottom:none;transform:skewX(-18deg);position:absolute;left:0;top:0;z-index:-1;transition:all .3s}
+article ul li a:after{background-color:rgba(66,140,188,.5);border-radius:50%;transform:skewX(-18deg) scale(0)}
+article ul li a:hover:after,article ul li.active a:after,article ul li.active a:hover:after{border-radius:0;transform:skewX(-18deg) scale(1)}
+article ul li a.action:after{background-color:rgba(66,140,188,.5);border-radius:0;transform:skewX(-18deg) scale(1)}
+article .Works{overflow-y:auto;display:grid;gap:1rem;justify-content:space-between;grid-template-columns:repeat(3,1fr);height:calc(100% - 3.5rem)}
+article .Works .item{background:#f6f6f6}
+article .Works .item a{align-items:center;color:#535353;text-decoration:none}
+article .Works .item a:hover{color:#e130a7}
+article .Works .item .imgBox{overflow:hidden;height:12rem}
+article .Works .item .imgBox img{width:100%;transition:all .6s linear}
+article .Works .item:hover img{transform:scale(1.15)}
+article .Works .item:hover .source{background:#e130a7;border-color:#e130a7;color:#fff}
+article .Works .item a h2{margin-bottom:.5rem;font-size:1.275rem}
+article .Works .item a span{text-align:justify}
+article .Works .item a small{display:block;margin-top:.5rem}
+aside{grid-area:1/2/2/3;text-align:center}
+aside img{border-radius:9999px;width:10rem;height:10rem;display:block;vertical-align:middle;margin:-7rem auto 0 auto;box-shadow:0 0 2rem #0f739b}
+aside{display:block;padding:2rem;background-color:#fff;border-radius:1rem;position:sticky;margin-top:7rem;align-self:start}
+aside h2{font-weight:600;font-size:1.875rem;line-height:2.25rem;color:#1f2937}
+
+.scale-up{transform:scale(0);animation:scaleUp .5s ease forwards}
+@keyframes scaleUp{from{transform:scale(0)}
+    to{transform:scale(1)}
+}
